@@ -1,0 +1,8 @@
+<h1>Here are some awesome quotes!</h1>
+@{ 
+    foreach (var user in ViewBag.User)
+    {
+     <h3>@user.Quote</h3>
+     <p> - @user.Name / @user.Createdat</p>
+    }
+}
